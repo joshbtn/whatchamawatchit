@@ -12,7 +12,7 @@ MailComposer = require('mailcomposer').MailComposer;
 url = "http://www.microsoft.com/en-us/download/details.aspx?id=36229"
 elementId = "ctl00_ctl20_ColumnRepeater_ctl00_RowRepeater_ctl01_CellRepeater_ctl00_ctl01";
 SMTP_PORT = 25;
-SMTP_HOST  = "mail.hirtlecallaghan.com"
+SMTP_HOST  = ""
 doc = null
 win = null
 options = cli.parse()
@@ -45,7 +45,7 @@ sendEmail = () ->
     mail.addHeader "x-mailer", "Nodemailer 1.0"
     mail.setMessageOption
         from: "crm@example.com",
-        to: "jbennett@hirtlecallaghan.com",
+        to: "test@example.com",
         subject: "CRM 2011 rollup 12 might be available",
         body: "CRM 2011 rollup 12 might be available!",
         html: "<b>CRM 2011 rollup 12 might be available!</b>"
